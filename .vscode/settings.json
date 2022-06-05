@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "database": "${workspaceFolder:django-volt-dashboard}/db.sqlite3",
+      "name": "django-volt"
+    }
+  ]
+}
