@@ -30,7 +30,9 @@
         <p class="mb-0">Seus agendamentos marcados e já realizados.</p>
     </div>
     <div class="btn-toolbar mb-2 mb-md-0">
-        <a href="#" class="btn btn-sm btn-gray-800 d-inline-flex align-items-center">
+
+        <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center" data-bs-toggle="modal"
+            data-bs-target="#modal-form">
             <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
@@ -38,10 +40,64 @@
             </svg>
             Novo Agendamento
         </a>
-        <div class="btn-group ms-2 ms-lg-3">
-            <button type="button" class="btn btn-sm btn-outline-gray-600">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-gray-600">Export</button>
+
+
+        <!-- Button Modal -->
+        <!-- Modal Content -->
+        <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <div class="card p-3 p-lg-4">
+                            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            <div class="text-center text-md-center mb-4 mt-md-0">
+                                <h1 class="mb-0 h4">Marque o seu agendamento</h1>
+                            </div>
+                            <form action="#" class="mt-4">
+                                <!-- Form -->
+                                <div class="form-group mb-4">
+                                    <label for="date">Informe a Data</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z"/>
+                                              </svg>
+                                        </span>
+                                        <input type="date" class="form-control" placeholder="dd/mm/yyyy"
+                                            id="date" autofocus required>
+                                    </div>
+                                </div>
+                                <!-- End of Form -->
+                                <div class="form-group">
+                                    <!-- Form -->
+                                    <div class="form-group mb-4">
+                                        <label for="password">Informe o motivo do Agendamento</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
+                                                    <path d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z"/>
+                                                  </svg>
+                                            </span>
+                                            <input type="text" placeholder="Reparo na pintura lateral" class="form-control"
+                                                id="password" required>
+                                        </div>
+                                    </div>
+                                    <!-- End of Form -->
+                                    
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-gray-800">Marcar agendamento</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- End of Modal Content -->
     </div>
 </div>
 
@@ -96,10 +152,7 @@
                 <th class="border-gray-200">Agendamento</th>
                 <th class="border-gray-200">Motivo</th>
                 <th class="border-gray-200">Criado em</th>
-                <th class="border-gray-200">Prazo final</th>
-                <th class="border-gray-200">Previsão </th>
-                <th class="border-gray-200">Status</th>
-                <th class="border-gray-200">Ação</th>
+                <th class="border-gray-200">Data Marcada</th>
             </tr>
         </thead>
         <tbody>
@@ -107,13 +160,13 @@
             <tr>
                 <td>
                     <a href="#" class="fw-bold">
-                        {456478}
+                        {01}
                     </a>
                 </td>
                 <td>
-                    <span class="fw-normal">{Platinum Subscription Plan}</span>
+                    <span class="fw-normal">{Reparo na pintura lateral}</span>
                 </td>
-                <td><span class="fw-normal">{1 May 2020}</span></td>
+                <td><span class="fw-normal">{01/05/2022}</span></td>
                 <td><span class="fw-normal">{1 Jun 2020}</span></td>
                 <td><span class="fw-bold">{$799,00}</span></td>
                 <td><span class="fw-bold text-warning">{Due}</span></td>
@@ -202,238 +255,6 @@
                     </div>
                 </td>
             </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="#" class="fw-bold">
-                        456421
-                    </a>
-                </td>
-                <td>
-                    <span class="fw-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="fw-normal">1 Feb 2020</span></td>
-                <td><span class="fw-normal">1 Mar 2020</span></td>
-                <td><span class="fw-bold">$799,00</span></td>
-                <td><span class="fw-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon icon-sm">
-                                <span class="fas fa-ellipsis-h icon-dark"></span>
-                            </span>
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu py-0">
-                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View
-                                Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span
-                                    class="fas fa-trash-alt me-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="#" class="fw-bold">
-                        456420
-                    </a>
-                </td>
-                <td>
-                    <span class="fw-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="fw-normal">1 Jan 2020</span></td>
-                <td><span class="fw-normal">1 Feb 2020</span></td>
-                <td><span class="fw-bold">$799,00</span></td>
-                <td><span class="fw-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon icon-sm">
-                                <span class="fas fa-ellipsis-h icon-dark"></span>
-                            </span>
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu py-0">
-                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View
-                                Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span
-                                    class="fas fa-trash-alt me-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="#" class="fw-bold">
-                        456479
-                    </a>
-                </td>
-                <td>
-                    <span class="fw-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="fw-normal">1 Dec 2019</span></td>
-                <td><span class="fw-normal">1 Jan 2020</span></td>
-                <td><span class="fw-bold">$799,00</span></td>
-                <td><span class="fw-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon icon-sm">
-                                <span class="fas fa-ellipsis-h icon-dark"></span>
-                            </span>
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu py-0">
-                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View
-                                Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span
-                                    class="fas fa-trash-alt me-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="#" class="fw-bold">
-                        456478
-                    </a>
-                </td>
-                <td>
-                    <span class="fw-normal">Platinum Subscription Plan</span>
-                </td>
-                <td><span class="fw-normal">1 Nov 2019</span></td>
-                <td><span class="fw-normal">1 Dec 2019</span></td>
-                <td><span class="fw-bold">$799,00</span></td>
-                <td><span class="fw-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon icon-sm">
-                                <span class="fas fa-ellipsis-h icon-dark"></span>
-                            </span>
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu py-0">
-                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View
-                                Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span
-                                    class="fas fa-trash-alt me-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="#" class="fw-bold">
-                        453673
-                    </a>
-                </td>
-                <td>
-                    <span class="fw-normal">Gold Subscription Plan</span>
-                </td>
-                <td><span class="fw-normal">1 Oct 2019</span></td>
-                <td><span class="fw-normal">1 Nov 2019</span></td>
-                <td><span class="fw-bold">$533,42</span></td>
-                <td><span class="fw-bold text-danger">Cancelled</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon icon-sm">
-                                <span class="fas fa-ellipsis-h icon-dark"></span>
-                            </span>
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu py-0">
-                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View
-                                Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span
-                                    class="fas fa-trash-alt me-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="#" class="fw-bold">
-                        456468
-                    </a>
-                </td>
-                <td>
-                    <span class="fw-normal">Gold Subscription Plan</span>
-                </td>
-                <td><span class="fw-normal">1 Sep 2019</span></td>
-                <td><span class="fw-normal">1 Oct 2019</span></td>
-                <td><span class="fw-bold">$533,42</span></td>
-                <td><span class="fw-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon icon-sm">
-                                <span class="fas fa-ellipsis-h icon-dark"></span>
-                            </span>
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu py-0">
-                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View
-                                Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span
-                                    class="fas fa-trash-alt me-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <!-- Item -->
-            <tr>
-                <td>
-                    <a href="#" class="fw-bold">
-                        456478
-                    </a>
-                </td>
-                <td>
-                    <span class="fw-normal">Flexible Subscription Plan</span>
-                </td>
-                <td><span class="fw-normal">1 Aug 2019</span></td>
-                <td><span class="fw-normal">1 Sep 2019</span></td>
-                <td><span class="fw-bold">$233,42</span></td>
-                <td><span class="fw-bold text-success">Paid</span></td>
-                <td>
-                    <div class="btn-group">
-                        <button class="btn btn-link text-dark dropdown-toggle dropdown-toggle-split m-0 p-0"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="icon icon-sm">
-                                <span class="fas fa-ellipsis-h icon-dark"></span>
-                            </span>
-                            <span class="visually-hidden">Toggle Dropdown</span>
-                        </button>
-                        <div class="dropdown-menu py-0">
-                            <a class="dropdown-item rounded-top" href="#"><span class="fas fa-eye me-2"></span>View
-                                Details</a>
-                            <a class="dropdown-item" href="#"><span class="fas fa-edit me-2"></span>Edit</a>
-                            <a class="dropdown-item text-danger rounded-bottom" href="#"><span
-                                    class="fas fa-trash-alt me-2"></span>Remove</a>
-                        </div>
-                    </div>
-                </td>
-            </tr>
         </tbody>
     </table>
     <div class="card-footer px-3 border-0 d-flex flex-column flex-lg-row align-items-center justify-content-between">
@@ -462,7 +283,7 @@
                 </li>
             </ul>
         </nav>
-        <div class="fw-normal small mt-4 mt-lg-0">Exibindo <b>{10}</b> de <b>{25}</b> entries</div>
+        <div class="fw-normal small mt-4 mt-lg-0">Exibindo <b>{3}</b> de <b>{3}</b> agendamentos</div>
     </div>
 </div>
 

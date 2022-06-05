@@ -10,15 +10,209 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center py-4">
     <div>
         <div class="dropdown">
-            <button class="btn btn-secondary d-inline-flex align-items-center me-2 dropdown-toggle"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center" data-bs-toggle="modal"
+                data-bs-target="#modal-form">
                 <svg class="icon icon-xs me-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+                    </path>
                 </svg>
-                New
-            </button>
+                Adicionar Carro
+            </a>
+
+
+            <!-- Button Modal -->
+            <!-- Modal Content -->
+            <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body p-0">
+                            <div class="card p-3 p-lg-4">
+                                <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                                <div class="text-center text-md-center mb-4 mt-md-0">
+                                    <h1 class="mb-0 h4">Informe os dados do seu carro</h1>
+                                </div>
+                                <form action="#" class="mt-4">
+                                    <!-- Form -->
+                                    <div class="form-group mb-4">
+                                        <label for="select">Marca</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z" />
+                                                </svg>
+                                            </span>
+                                            <select class="form-select mb-0" id="brand"
+                                                aria-label="Brand select example">
+                                                <option selected="" value="">Selecione a marca</option>
+                                                <option value="4">Audi</option>
+                                                <option value="5">BMW</option>
+                                                <option value="7">Chevrolet</option>
+                                                <option value="9">Citroen</option>
+                                                <option value="18">Fiat</option>
+                                                <option value="19">Ford</option>
+                                                <option value="23">Hyundai</option>
+                                                <option value="22">Honda</option>
+                                                <option value="27">Jeep</option>
+                                                <option value="36">Mercedes Benz</option>
+                                                <option value="38">Mitsubishi</option>
+                                                <option value="42">Nissan</option>
+                                                <option value="45">Peugeot</option>
+                                                <option value="49">Renault</option>
+                                                <option value="55">Toyota</option>
+                                                <option value="57">Volkswagen</option>
+                                                <option value="60"> -</option>
+                                                <option value="1">Agrale</option>
+                                                <option value="2">Alfa Romeo</option>
+                                                <option value="184">Americar</option>
+                                                <option value="3">Asia Motors</option>
+                                                <option value="175">Aston Martin</option>
+                                                <option value="4">Audi</option>
+                                                <option value="139">Autocross</option>
+                                                <option value="208">Bentley</option>
+                                                <option value="5">BMW</option>
+                                                <option value="6">Buggy</option>
+                                                <option value="156">Cadillac</option>
+                                                <option value="150">Chana</option>
+                                                <option value="120">Changan</option>
+                                                <option value="119">Chery</option>
+                                                <option value="7">Chevrolet</option>
+                                                <option value="8">Chrysler</option>
+                                                <option value="9">Citroen</option>
+                                                <option value="10">Comil</option>
+                                                <option value="11">Daewoo</option>
+                                                <option value="12">Daihatsu</option>
+                                                <option value="13">DKW</option>
+                                                <option value="14">Dodge</option>
+                                                <option value="15">Effa</option>
+                                                <option value="16">Engesa</option>
+                                                <option value="147">Farus</option>
+                                                <option value="17">Ferrari</option>
+                                                <option value="18">Fiat</option>
+                                                <option value="19">Ford</option>
+                                                <option value="180">Geely</option>
+                                                <option value="176">GMC</option>
+                                                <option value="178">Gonow</option>
+                                                <option value="20">Gurgel</option>
+                                                <option value="21">Hafei</option>
+                                                <option value="22">Honda</option>
+                                                <option value="155">Hummer</option>
+                                                <option value="23">Hyundai</option>
+                                                <option value="170">Infiniti</option>
+                                                <option value="24">Isuzu</option>
+                                                <option value="25">Iveco</option>
+                                                <option value="127">Jac</option>
+                                                <option value="26">Jaguar</option>
+                                                <option value="27">Jeep</option>
+                                                <option value="162">Jinbei</option>
+                                                <option value="28">JPX</option>
+                                                <option value="29">Kia</option>
+                                                <option value="30">Lada</option>
+                                                <option value="160">Lamborghini</option>
+                                                <option value="31">Land Rover</option>
+                                                <option value="144">Lexus</option>
+                                                <option value="130">Lifan</option>
+                                                <option value="149">Lincoln</option>
+                                                <option value="159">Lotus</option>
+                                                <option value="137">Mahindra</option>
+                                                <option value="33">Mascarelo</option>
+                                                <option value="34">Maserati</option>
+                                                <option value="35">Mazda</option>
+                                                <option value="44">Mclaren</option>
+                                                <option value="36">Mercedes Benz</option>
+                                                <option value="168">MG</option>
+                                                <option value="37">Mini</option>
+                                                <option value="145">Mini Veículos</option>
+                                                <option value="38">Mitsubishi</option>
+                                                <option value="39">Miura</option>
+                                                <option value="40">MP Lafer</option>
+                                                <option value="41">NeoBus</option>
+                                                <option value="42">Nissan</option>
+                                                <option value="43">Oldsmobile</option>
+                                                <option value="117">Opel</option>
+                                                <option value="45">Peugeot</option>
+                                                <option value="46">Pontiac</option>
+                                                <option value="47">Porsche</option>
+                                                <option value="165">Pretty</option>
+                                                <option value="48">Puma</option>
+                                                <option value="209">Ram</option>
+                                                <option value="49">Renault</option>
+                                                <option value="172">Rolls Royce</option>
+                                                <option value="138">Santa Matilde</option>
+                                                <option value="50">Seat</option>
+                                                <option value="161">Shineray</option>
+                                                <option value="123">Smart</option>
+                                                <option value="51">Ssangyong</option>
+                                                <option value="52">Subaru</option>
+                                                <option value="53">Suzuki</option>
+                                                <option value="143">Tac</option>
+                                                <option value="54">Tanger</option>
+                                                <option value="205">Tesla</option>
+                                                <option value="55">Toyota</option>
+                                                <option value="181">Triumph</option>
+                                                <option value="56">Troller</option>
+                                                <option value="57">Volkswagen</option>
+                                                <option value="58">Volvo</option>
+                                                <option value="59">Walk</option>
+                                                <option value="136">Willys</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- End of Form -->
+                                    <div class="form-group">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label for="password">Modelo</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                                                    </svg>
+                                                </span>
+                                                <input type="text" placeholder="Informe o modelo do carro"
+                                                    class="form-control" id="password" required>
+                                            </div>
+                                        </div>
+                                        <!-- End of Form -->
+                                        
+                                    </div>
+
+                                    <div class="form-group">
+                                        <!-- Form -->
+                                        <div class="form-group mb-4">
+                                            <label for="password">Cor</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-type" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m2.244 13.081.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z" />
+                                                    </svg>
+                                                </span>
+                                                <input type="text" placeholder="Informe a cor do carro"
+                                                    class="form-control" id="password" required>
+                                            </div>
+                                        </div>
+                                        <!-- End of Form -->
+                                        
+                                    </div>
+                                    <div class="d-grid">
+                                        <button type="submit" class="btn btn-gray-800">Adicionar Carro</button>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
@@ -61,83 +255,70 @@
             </div>
         </div>
     </div>
-    <div>
-        <button type="button" class="btn btn-gray-800 d-inline-flex align-items-center me-2">
-            <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                    clip-rule="evenodd"></path>
-            </svg>
-        </button>
-        <button class="btn btn-gray-800 d-inline-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                <path fill-rule="evenodd"
-                    d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                    clip-rule="evenodd"></path>
-            </svg>
-            Reports
-            <svg class="icon icon-xs ms-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-            </svg>
-        </button>
-        <div class="dropdown-menu dashboard-dropdown dropdown-menu-start mt-2 py-1">
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path>
-                    <path fill-rule="evenodd"
-                        d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                </svg>
-                Products
-            </a>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z">
-                    </path>
-                </svg>
-                Customers
-            </a>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
-                        clip-rule="evenodd"></path>
-                </svg>
-                Orders
-            </a>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <svg class="dropdown-icon text-gray-400 me-2" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11 4a1 1 0 10-2 0v4a1 1 0 102 0V7zm-3 1a1 1 0 10-2 0v3a1 1 0 102 0V8zM8 9a1 1 0 00-2 0v2a1 1 0 102 0V9z"
-                        clip-rule="evenodd"></path>
-                </svg>
-                Console
-            </a>
-            <div role="separator" class="dropdown-divider my-1"></div>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-                <svg class="dropdown-icon text-gray-800 me-2" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                    <path fill-rule="evenodd"
-                        d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                        clip-rule="evenodd"></path>
-                </svg>
-                All Reports
-            </a>
-        </div>
-    </div>
+    
 </div>
+
+
+    <div class="col-12 col-xl-8">
+        
+    </div>
+    
+
+
 <div class="row">
     <div class="col-12 col-xl-8">
+        <div class="card card-body border-0 shadow mb-4 table-wrapper table-responsive">
+            <h2 class="h5 mb-4">Lista de Carros</h2>
+            
+        
+        
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th class="border-gray-200">Marca</th>
+                        <th class="border-gray-200">Modelo</th>
+                        <th class="border-gray-200">Cor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                Volkswagen
+                            </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Gol 1.6 Comfort Line</span>
+                        </td>
+                        <td><span class="fw-normal">Branco</span></td>
+                    </tr>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                456423
+                            </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Platinum Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Apr 2020</span></td>
+                    <!-- Item -->
+                    <tr>
+                        <td>
+                            <a href="#" class="fw-bold">
+                                456420
+                            </a>
+                        </td>
+                        <td>
+                            <span class="fw-normal">Platinum Subscription Plan</span>
+                        </td>
+                        <td><span class="fw-normal">1 Mar 2020</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <div class="card card-body border-0 shadow mb-4">
             <h2 class="h5 mb-4">Informações Gerais</h2>
             <form>
@@ -279,7 +460,7 @@
                         <img src="{{ ASSETS_ROOT }}/img/team/profile-picture-1.jpg"
                             class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
                         <h4 class="h3">
-                            Neil Sims
+                            Octávio Rocha
                         </h4>
                         <h5 class="fw-normal">
                             {{ request.user.username }}
@@ -287,77 +468,12 @@
                         <p class="text-gray mb-4">
                             {{ request.user.email }}
                         </p>
-                        <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
-                            <svg class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z">
-                                </path>
-                            </svg>
-                            Connect
-                        </a>
-                        <a class="btn btn-sm btn-secondary" href="#">Send Message</a>
+                       
                     </div>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="card card-body border-0 shadow mb-4">
-                    <h2 class="h5 mb-4">Select profile photo</h2>
-                    <div class="d-flex align-items-center">
-                        <div class="me-3">
-                            <!-- Avatar -->
-                            <img class="rounded avatar-xl" src="{{ ASSETS_ROOT }}/img/team/profile-picture-3.jpg"
-                                alt="change avatar">
-                        </div>
-                        <div class="file-field">
-                            <div class="d-flex justify-content-xl-center ms-xl-3">
-                                <div class="d-flex">
-                                    <svg class="icon text-gray-500 me-2" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <input type="file">
-                                    <div class="d-md-block text-left">
-                                        <div class="fw-normal text-dark mb-1">Choose Image</div>
-                                        <div class="text-gray small">JPG, GIF or PNG. Max size of 800K</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="card card-body border-0 shadow">
-                    <h2 class="h5 mb-4">Select cover photo</h2>
-                    <div class="d-flex align-items-center">
-                        <div class="me-3">
-                            <!-- Avatar -->
-                            <img class="rounded avatar-xl" src="{{ ASSETS_ROOT }}/img/profile-cover.jpg"
-                                alt="change cover">
-                        </div>
-                        <div class="file-field">
-                            <div class="d-flex justify-content-xl-center ms-xl-3">
-                                <div class="d-flex">
-                                    <svg class="icon text-gray-500 me-2" fill="currentColor" viewBox="0 0 20 20"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd"
-                                            d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                    <input type="file">
-                                    <div class="d-md-block text-left">
-                                        <div class="fw-normal text-dark mb-1">Choose Image</div>
-                                        <div class="text-gray small">JPG, GIF or PNG. Max size of 800K</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            
         </div>
     </div>
 </div>
